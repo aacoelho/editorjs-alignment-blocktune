@@ -53,11 +53,8 @@
    Read more in Tool's README file. For example:
    https://github.com/editor-js/header#installation
    -->
-  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest/dist/editor.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.28.0/dist/editorjs.umd.min.js"></script>
   <script src="../dist/bundle.js" onload="document.getElementById('hint').hidden = true"></script><!-- Header -->
-  <script src="./tools/paragraph/dist/bundle.js" onload="document.getElementById('hint').hidden = true"></script><!-- Header -->
-  <script src="./tools/delimiter/dist/bundle.js" onload="document.getElementById('hint').hidden = true"></script><!-- Header -->
-  <script src="./tools/header/dist/bundle.js" onload="document.getElementById('hint').hidden = true"></script><!-- Header -->
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/raw"></script>
@@ -65,7 +62,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script>
-  <script src="https://cdn.jsdelivr.net/npm/editorjs-header-with-anchor@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@latest"></script>
 
   <!-- Initialization -->
   <script>
@@ -124,7 +122,6 @@
           class: Header,
           tunes: ['alignmentSetting'],
         },
-        delimiter: Delimiter,
         paragraph: {
           class: Paragraph,
           inlineToolbar: false,
@@ -156,7 +153,7 @@
 
       //標準で何も設定していない
       //data:{ "time" : 1617693971188, "blocks" : [ { "type" : "paragraph", "data" : { "text" : "center" }, "tunes" : { "hehe" : { "alignment" : "center" } } }, { "type" : "paragraph", "data" : { "text" : "riiiiiiiiiight" } }, { "type" : "paragraph", "data" : { "text" : "hellooooooooooooooooo" } }, { "type" : "header", "data" : { "text" : "header", "level" : 2 } }, { "type" : "quote", "data" : { "text" : "quote text", "caption" : "caption", "alignment" : "left" } }, { "type" : "table", "data" : { "content" : [ [ "aaaaaaaa", "bbbbbbbbbb", "cccccccc" ], [ "111111111", "2222222222", "ccccccccc" ] ] } }, { "type" : "code", "data" : { "code" : "paragraph: {\n          class: Paragraph,\n          inlineToolbar: false,\n          tunes: ['alignmentSetting'],\n          config:{\n            css:{\n              \"btnColor\": \"btn--gray\",\n            }\n          }\n        }," } }, { "type" : "raw", "data" : { "html" : "paragraph: {\n          class: Paragraph,\n          inlineToolbar: false,\n          tunes: ['alignmentSetting'],\n          config:{\n            css:{\n              \"btnColor\": \"btn--gray\",\n            }\n          }\n        }," } }, { "type" : "paragraph", "data" : { "text" : "paragrapg" } }, { "type" : "checklist", "data" : { "items" : [ { "text" : "check1", "checked" : false }, { "text" : "check2", "checked" : false }, { "text" : "check3", "checked" : false } ] } }, { "type" : "delimiter", "data" : {} }, { "type" : "paragraph", "data" : { "text" : "end" } } ], "version" : "2.20.0" },
-      data:{ "time" : 1617715359615, "blocks" : [ { "type" : "checklist", "data" : { "items" : [ { "text" : "check1", "checked" : false }, { "text" : "check2", "checked" : false }, { "text" : "check3", "checked" : false } ] }, "tunes" : { "alignmentSetting" : { "alignment" : "center" } } }, { "type" : "header", "data" : { "text" : "Header", "level" : 2 }, "tunes" : { "alignmentSetting" : { "alignment" : "left" } } } ], "version" : "2.20.0" },
+      data:{ "time" : 1617715359615, "blocks" : [ { "type" : "header", "data" : { "text" : "Header", "level" : 2 }, "tunes" : { "alignmentSetting" : { "alignment" : "left" } } } ], "version" : "2.20.0" },
       /**
        * This Tool will be used as default
        */
