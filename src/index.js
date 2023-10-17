@@ -2,7 +2,6 @@
  * Build styles
  */
 require('./index.css').toString();
-const {make} = require('./util');
 
 class AlignmentBlockTune {
 
