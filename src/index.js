@@ -1,9 +1,9 @@
 /**
  * Build styles
  */
-require('./index.css').toString();
+import css from './index.css';
 
-class AlignmentBlockTune {
+export default class AlignmentBlockTune {
 
     /**
      * Default alignment
@@ -130,4 +130,3 @@ class AlignmentBlockTune {
     }
 }
 
-module.exports = AlignmentBlockTune;

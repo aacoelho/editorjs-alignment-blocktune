@@ -38,6 +38,7 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
     library: 'AlignmentBlockTune',
+    libraryExport: 'default',
     libraryTarget: 'umd'
   }
 };
