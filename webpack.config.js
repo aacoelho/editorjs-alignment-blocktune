@@ -1,8 +1,8 @@
+const path = require('path');
+
 module.exports = {
   entry: './src/index.js',
   mode: "production",
-  // ES5(IE11等)向けの指定
-  target: ["web", "es5"],
   module: {
     rules: [
       {
@@ -35,7 +35,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, '/dist'),
     publicPath: '/',
     filename: 'bundle.js',
     library: 'AlignmentBlockTune',
