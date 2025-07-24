@@ -115,6 +115,9 @@ export default class AlignmentBlockTune {
 
     updateAlign(currentAlign) {
         this.data.alignment = currentAlign;
+        
+        // Trigger editorjs update
+        this.block?.dispatchChange();
 
         this.alignmentSettings.forEach(align => {
             this.blockContent.classList.toggle(this._CSS.alignment[align.name], this.data.alignment === align.name);
